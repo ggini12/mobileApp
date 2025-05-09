@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/color_red"
+        android:title="빨강" />
+    <item
+        android:id="@+id/color_blue"
+        android:title="파랑" />
+    <item
+        android:id="@+id/color_black"
+        android:title="검정" />
+    <item
+        android:id="@+id/thin"
+        android:title="얇게" />
+    <item
+        android:id="@+id/medium"
+        android:title="중간" />
+    <item
+        android:id="@+id/thick"
+        android:title="두껍게" />
+    <item
+        android:id="@+id/eraser"
+        android:title="지우개" />
+</menu>
