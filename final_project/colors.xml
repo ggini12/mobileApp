@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 기본 색상 -->
+    <color name="primary_color">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="accent_color">#F59E0B</color>
+
+    <!-- 배경 색상 -->
+    <color name="background_color">#F8FAFC</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="timer_card_background">#6366F1</color>
+
+    <!-- 텍스트 색상 -->
+    <color name="primary_text">#1F2937</color>
+    <color name="secondary_text">#6B7280</color>
+    <color name="timer_text_color">#FFFFFF</color>
+    <color name="timer_label_color">#E0E7FF</color>
+
+    <!-- 버튼 색상 -->
+    <color name="start_button">#10B981</color>
+    <color name="start_button_pressed">#059669</color>
+    <color name="stop_button">#EF4444</color>
+    <color name="stop_button_pressed">#DC2626</color>
+    <color name="activity_button">#F3F4F6</color>
+    <color name="activity_button_selected">#E0E7FF</color>
+
+    <!-- 기타 -->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="shadow">#20000000</color>
+</resources>

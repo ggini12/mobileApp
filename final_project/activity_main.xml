@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 헤더 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰"
+                android:textSize="48sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시간 관리"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/selectedActivityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="활동을 선택하세요"
+                android:textSize="16sp"
+                android:textColor="@color/secondary_text"/>
+        </LinearLayout>
+
+        <!-- 활동 선택 버튼들 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="@color/card_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="활동 선택"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <Button
+                            android:id="@+id/btnStudy"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:text="📚"
+                            android:textSize="24sp"
+                            android:background="@drawable/activity_button_background"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공부"
+                            android:textSize="14sp"
+                            android:textColor="@color/primary_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <Button
+                            android:id="@+id/btnGame"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:text="🎮"
+                            android:textSize="24sp"
+                            android:background="@drawable/activity_button_background"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="게임"
+                            android:textSize="14sp"
+                            android:textColor="@color/primary_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <Button
+                            android:id="@+id/btnExercise"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:text="🏃"
+                            android:textSize="24sp"
+                            android:background="@drawable/activity_button_background"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="운동"
+                            android:textSize="14sp"
+                            android:textColor="@color/primary_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <Button
+                            android:id="@+id/btnOther"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:text="⚡"
+                            android:textSize="24sp"
+                            android:background="@drawable/activity_button_background"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="수면/휴식"
+                            android:textSize="14sp"
+                            android:textColor="@color/primary_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 타이머 영역 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="@color/timer_card_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경과 시간"
+                    android:textSize="16sp"
+                    android:textColor="@color/timer_label_color"
+                    android:layout_marginBottom="16dp"/>
+
+                <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/timer_text_color"
+                    android:fontFamily="monospace"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 컨트롤 버튼들 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:text="시작"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/start_button_background"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="120dp"
+                android:layout_height="56dp"
+                android:text="정지"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/stop_button_background"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- 기록 보기 버튼 -->
+        <Button
+            android:id="@+id/btnShowRecord"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📊 기록 보기"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:background="@drawable/record_button_background"/>
+
+    </LinearLayout>
+</ScrollView>
